@@ -190,7 +190,7 @@ FILM, RADIATE, DFLUX: Estos comandos se usan para aplicar condiciones térmicas 
 # Visualizacion de los resultados
 - En la siguiente imagen se muetra los resultados de la simulacion donde se esta construyendo la pieza por medio de capaz.
 
-![Am_therm_total](https://github.com/user-attachments/assets/ba0c98f3-6111-4864-8001-eea18c28fdee)
+[![Simulación de Soldadura - CalculiX](https://img.youtube.com/vi/eN-g47uGEmI/0.jpg)](https://www.youtube.com/watch?v=eN-g47uGEmI)
 
 # Video de resultados 
 **Haz clic en la imagen para ver el video en YouTube.**
