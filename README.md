@@ -192,6 +192,9 @@ FILM, RADIATE, DFLUX: Estos comandos se usan para aplicar condiciones térmicas 
 
 ![Am_therm_total](https://github.com/user-attachments/assets/ba0c98f3-6111-4864-8001-eea18c28fdee)
 
+# Video de resultados 
+[AM_therm_total]()
+
 # [Welding simulation](https://github.com/jr23mx/Instrucciones-compilar-calculix/tree/main/Welding)
 La siguiente simulacion tambien se compone por un dflux que calcula el flujo de calor en cada punto de integración de la malla durante la simulación de un proceso de soldadura, utilizando un modelo de elementos finitos. Específicamente, este subprograma permite implementar la distribución de calor generada por una fuente de calor (como un láser o arco) a lo largo de una trayectoria de soldadura.
 En resumen, este subprograma gestiona cómo se distribuye y aplica el calor en un modelo de elementos finitos a lo largo de una trayectoria de soldadura, permitiendo simular el proceso de transferencia de calor y la evolución de la temperatura en la malla durante la simulación de soldadura. Esto es crucial para predecir los efectos térmicos en la pieza, como la deformación, las tensiones residuales y la microestructura del material.
@@ -229,6 +232,9 @@ Cada paso incluye comandos de **reinicio** para guardar los resultados intermedi
 Este archivo simula el comportamiento térmico de una **lámina de metal** durante el proceso de soldadura, aplicando diferentes mecanismos de transferencia de calor, como la transferencia directa, la convección por película de aire y la radiación. A lo largo de los pasos, se agregan nuevos parámetros para cada proceso de transferencia térmica y se registran los resultados de la simulación.
 
 ![image](https://github.com/user-attachments/assets/f01ed6de-6184-4d58-83e8-7af4fcc638a6)
+
+## Video de resultados de Weld_I_dlux
+[Weld_I_dflux](https://www.youtube.com/shorts/VPIL53iu3Ik)
 
 # [Pasos para ejecutar los archivos](https://github.com/jr23mx/Instrucciones-compilar-calculix/tree/main/Ccx_optimizado/ccx_sin_exe) 
 - Para poder ejecutar los archivos se necesitan descargar las carpetas que se desean ejecutar, ya sea la de additive o welding, estas carpetas cuentan con una estructura diseñada para que el usuario que desee replicar el ejemplo o probarlo solo tenga que dar unos clics.
