@@ -112,11 +112,9 @@ Este script compila los binarios de CalculiX:
 
 
 ### Construcción de Librerías
-```bash
 sh build.sh
 
-### Construcción de Librerías
-```bash
+### Construcción de ejecutables
 sh build_ccx.sh
 
 # Additive simulation
