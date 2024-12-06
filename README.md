@@ -48,9 +48,11 @@ Para realiazar una instalacion de limpia de CalculiX se necesita descargar la ca
 
 ---
 # Video explicativo de la instalacion de ccx optimizado
+**Haz clic en la imagen para ver el video en YouTube.**
+
 [![Simulación de Soldadura - CalculiX](https://img.youtube.com/vi/9VO7OBEkNwI/0.jpg)](https://www.youtube.com/watch?v=9VO7OBEkNwI)
 
-**Haz clic en la imagen para ver el video en YouTube.**
+
 ---
 # Diferencias de calculix base y optimizado
 ## **Descripción de los Scripts**
