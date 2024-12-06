@@ -29,7 +29,9 @@ Este repositorio contiene los archivos utilizados para realizar simulaciones de 
 Promover el uso de software libre en la simulación de procesos de soldadura y fomentar la colaboración en el desarrollo de nuevas técnicas.
 
 # Video de instalacion de calculix de forma base 
-https://www.youtube.com/watch?v=RSQOBVWMGF0
+[![Simulación de Soldadura - CalculiX](https://img.youtube.com/vi/RSQOBVWMGF0/0.jpg)](https://www.youtube.com/watch?v=RSQOBVWMGF0)
+
+---
 # Archivos para calculix base
 Se hace un agradecimiento a la compañia Mecway quien mantiene actualizado el script, gracias a este se pudo ejecutar ccx
 https://mecway.com/download/ccx_win64_mkl_pardiso_source_2.21_2.zip
