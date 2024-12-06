@@ -192,7 +192,7 @@ FILM, RADIATE, DFLUX: Estos comandos se usan para aplicar condiciones térmicas 
 
 ![Am_therm_total](https://github.com/user-attachments/assets/ba0c98f3-6111-4864-8001-eea18c28fdee)
 
-# Welding simulation
+# [Welding simulation](https://github.com/jr23mx/Instrucciones-compilar-calculix/tree/main/Welding)
 La siguiente simulacion tambien se compone por un dflux que calcula el flujo de calor en cada punto de integración de la malla durante la simulación de un proceso de soldadura, utilizando un modelo de elementos finitos. Específicamente, este subprograma permite implementar la distribución de calor generada por una fuente de calor (como un láser o arco) a lo largo de una trayectoria de soldadura.
 En resumen, este subprograma gestiona cómo se distribuye y aplica el calor en un modelo de elementos finitos a lo largo de una trayectoria de soldadura, permitiendo simular el proceso de transferencia de calor y la evolución de la temperatura en la malla durante la simulación de soldadura. Esto es crucial para predecir los efectos térmicos en la pieza, como la deformación, las tensiones residuales y la microestructura del material.
 # Weld_I_dlfux
