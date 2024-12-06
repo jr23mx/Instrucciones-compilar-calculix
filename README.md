@@ -28,7 +28,9 @@ Este repositorio contiene los archivos utilizados para realizar simulaciones de 
 
 Promover el uso de software libre en la simulación de procesos de soldadura y fomentar la colaboración en el desarrollo de nuevas técnicas.
 
-#  Instalacion de CalculiX de forma base
+# Video de instalacion de calculix de forma base 
+https://www.youtube.com/watch?v=RSQOBVWMGF0
+#  Instalacion de CalculiX optimizado
 Para realiazar una instalacion de limpia de CalculiX se necesita descargar la carpeta de archivos [Ccx_Base](https://github.com/PacoOMG2/Ccx-welding-simulation/tree/main/Ccx_base/ccx_sin_exe).
 1. Al descargar la carpeta se necesita instalar el programa [msys2](https://www.msys2.org) para hacer la construccion de ccx mediante su consola en su aplicacion MSYS2 MINGW64
 2. Al terminar la instalacion del programa, se busca la carpeta y se entra msys64 en la ruta donde se instalo, se accede a subcarpeta home despues a la siguiente carpeta de tu "usuario" y en ella se pega la carpeta de ccx_sin_exe, importante siempre dejar una copia de esta carpeta.
@@ -36,8 +38,86 @@ Para realiazar una instalacion de limpia de CalculiX se necesita descargar la ca
 4. Una hecho lo anterior, se entra a MINGW64, en la consola se teclea **cd ccx** se da enter y despues se ejecuta el build dentro de la carpeta de ccx con el siguiente comando **./build_ccx.sh**
 5. Atomaticamente al dar enter se empezara a construir ccx de forma base.
 
-# Video explicativo de la instalacion 
-"video"
+# Video explicativo de la instalacion de ccx optimizado
+https://www.youtube.com/watch?v=9VO7OBEkNwI
+
+# Diferencias de calculix base y optimizado
+## **Descripción de los Scripts**
+
+### 1. **Construcción de Librerías (`build.sh`)**
+Este script se encarga de compilar las dependencias necesarias para CalculiX:
+
+- **pthreads**
+- **SPOOLES**
+- **ARPACK**
+
+### 2. **Construcción de Ejecutables (`build_ccx.sh`)**
+Este script compila los binarios de CalculiX:
+
+- `ccx.exe`: Versión single-threaded.
+- `ccx_MKL.exe`: Versión optimizada con Intel MKL.
+
+---
+
+## **Diferencias con el Archivo Original**
+
+### **1. División del Proceso**
+- **Antes**: Todo el proceso (librerías y ejecutables) estaba en un solo script.
+- **Ahora**: Separación en dos scripts independientes:
+  - Uno para librerías.
+  - Otro para ejecutables.
+
+**Ventaja**: Permite ejecutar y depurar etapas específicas sin tener que repetir todo el proceso.
+
+---
+
+### **2. Paralelismo en la Compilación**
+- **Antes**: El comando `make` usaba un solo núcleo de CPU.
+- **Ahora**: Se añadió `make -j$(nproc)` para usar múltiples núcleos.
+
+**Ventaja**: Acelera significativamente la compilación, aprovechando la capacidad de la máquina.
+
+---
+
+### **3. Robustez y Verificaciones**
+- **Antes**:
+  - No se verificaba si los binarios (`ccx.exe` y `ccx_MKL.exe`) existían antes de copiarlos.
+  - Variables y rutas podían causar errores si contenían espacios.
+- **Ahora**:
+  - Verificaciones explícitas (`if [ -f "archivo" ]`) aseguran que los binarios se generaron correctamente.
+  - Uso consistente de `$(...)` y comillas (`"$VAR"`) en variables.
+
+**Ventaja**: Identifica problemas específicos durante la compilación y previene errores.
+
+---
+
+### **4. Mensajes y Logs**
+- **Antes**: Mensajes limitados y poco específicos.
+- **Ahora**:
+  - Logs separados para librerías (`buildlog.txt`) y ejecutables (`buildlog_ccx.txt`).
+  - Mensajes claros y detallados en caso de errores.
+
+**Ventaja**: Facilita el seguimiento del proceso y la depuración.
+
+---
+
+## **Cómo los Cambios Mejoraron el Proceso**
+
+1. **Ejecución independiente**: Permite compilar solo lo necesario, ahorrando tiempo en caso de errores.
+2. **Uso de paralelismo**: Reduce el tiempo total de compilación, especialmente para los ejecutables.
+3. **Mayor robustez**: Detecta errores tempranos y evita la propagación de fallos.
+4. **Organización clara**: Facilita la lectura y mantenimiento del código.
+
+---
+
+
+### Construcción de Librerías
+```bash
+sh build.sh
+
+### Construcción de Librerías
+```bash
+sh build_ccx.sh
 
 # Additive simulation
 **Explicacion**
