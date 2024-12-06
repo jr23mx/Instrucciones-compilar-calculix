@@ -30,6 +30,7 @@ Promover el uso de software libre en la simulación de procesos de soldadura y f
 
 # Video de instalacion de calculix de forma base 
 **Haz clic en la imagen para ver el video en YouTube.**
+
 [![Simulación de Soldadura - CalculiX](https://img.youtube.com/vi/RSQOBVWMGF0/0.jpg)](https://www.youtube.com/watch?v=RSQOBVWMGF0)
 
 ---
