@@ -23,14 +23,14 @@ Este repositorio contiene los archivos utilizados para realizar simulaciones de 
 
 - Documentación del flujo de trabajo y detalles técnicos.
 
-
+---
 **Objetivo**
 
 Promover el uso de software libre en la simulación de procesos de soldadura y fomentar la colaboración en el desarrollo de nuevas técnicas.
 
 # Video de instalacion de calculix de forma base 
 [![Simulación de Soldadura - CalculiX](https://img.youtube.com/vi/RSQOBVWMGF0/0.jpg)](https://www.youtube.com/watch?v=RSQOBVWMGF0)
-
+**Haz clic en la imagen para ver el video en YouTube.**
 ---
 # Archivos para calculix base
 Se hace un agradecimiento a la compañia Mecway quien mantiene actualizado el script, gracias a este se pudo ejecutar ccx
@@ -44,19 +44,22 @@ Para realiazar una instalacion de limpia de CalculiX se necesita descargar la ca
 4. Una hecho lo anterior, se entra a MINGW64, en la consola se teclea **cd ccx** se da enter y despues se ejecuta el build dentro de la carpeta de ccx con el siguiente comando **./build_ccx.sh**
 5. Atomaticamente al dar enter se empezara a construir ccx de forma base.
 
+---
 # Video explicativo de la instalacion de ccx optimizado
-https://www.youtube.com/watch?v=9VO7OBEkNwI
+[![Simulación de Soldadura - CalculiX](https://img.youtube.com/vi/9VO7OBEkNwI/0.jpg)](https://www.youtube.com/watch?v=9VO7OBEkNwI)
 
+**Haz clic en la imagen para ver el video en YouTube.**
+---
 # Diferencias de calculix base y optimizado
 ## **Descripción de los Scripts**
-
+---
 ### 1. **Construcción de Librerías (`build.sh`)**
 Este script se encarga de compilar las dependencias necesarias para CalculiX:
 
 - **pthreads**
 - **SPOOLES**
 - **ARPACK**
-
+---
 ### 2. **Construcción de Ejecutables (`build_ccx.sh`)**
 Este script compila los binarios de CalculiX:
 
