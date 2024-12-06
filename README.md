@@ -130,7 +130,7 @@ sh build.sh
 ### Construcción de ejecutables
 sh build_ccx.sh
 
-# [![Additive simulation](https://github.com/jr23mx/Instrucciones-compilar-calculix/tree/main/Additive)
+# [Additive simulation](https://github.com/jr23mx/Instrucciones-compilar-calculix/tree/main/Additive)
 **Explicacion**
 La soldadura aditiva es un proceso en el que se agrega material capa por capa para unir partes de metal, similar a cómo funciona la impresión 3D, pero en lugar de plástico, se utiliza metal. Este tipo de soldadura es útil para reparar piezas dañadas o crear piezas complejas que no pueden fabricarse fácilmente con métodos tradicionales. En lugar de eliminar material como en la soldadura convencional, donde se funden y unen dos piezas de metal, en la soldadura aditiva se va añadiendo material para formar nuevas estructuras, lo que permite mayor control sobre la forma y la calidad del resultado.
 Se realizaron 3 ejemplos de este tipo de soldadura, donde se construyo una pieza con un total de 5 capaz distintas simulando este proceso por una subrutina llamada dflux, la cual se encuentra dentro de los archivos.
