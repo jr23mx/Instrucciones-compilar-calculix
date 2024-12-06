@@ -234,7 +234,7 @@ Este archivo simula el comportamiento térmico de una **lámina de metal** duran
 ![image](https://github.com/user-attachments/assets/f01ed6de-6184-4d58-83e8-7af4fcc638a6)
 
 ## Video de resultados de Weld_I_dlux
-[Weld_I_dflux](https://www.youtube.com/shorts/VPIL53iu3Ik)
+[![Weld_I_dflux](https://img.youtube.com/vi/VPIL53iu3Ik/0.jpg)](https://www.youtube.com/shorts/VPIL53iu3Ik)
 
 # [Pasos para ejecutar los archivos](https://github.com/jr23mx/Instrucciones-compilar-calculix/tree/main/Ccx_optimizado/ccx_sin_exe) 
 - Para poder ejecutar los archivos se necesitan descargar las carpetas que se desean ejecutar, ya sea la de additive o welding, estas carpetas cuentan con una estructura diseñada para que el usuario que desee replicar el ejemplo o probarlo solo tenga que dar unos clics.
